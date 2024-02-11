@@ -34,7 +34,18 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
+
+.userFeedback{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
 form{
 display: flex;
 flex-direction: column;

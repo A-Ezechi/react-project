@@ -1,9 +1,14 @@
+const InnerWording = ({colourChoice}) => {
+    console.log('Colour Choice: ', colourChoice)
+    const defaultBackground = { backgroundColor: 'none' }
 
-
-const InnerWording = () => {
     return (
         <main className="colourBackground">
-            <p>Empty Value</p>
+            <p
+            className="userFeedback"
+            style={colourChoice || defaultBackground }
+
+            >Empty Value</p>
         </main>
     )
 }

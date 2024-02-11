@@ -1,15 +1,10 @@
-import { useState } from "react"
-
-const SearchBox = () => {
-    const {searchItem, setsearchItem} = useState()
-    const userInput = (event) => {
-        setsearchItem(event.target.value)
-    }
+const SearchBox = ({handleSubmit, searchItem, userInput, submitButton}) => {
+    
 
     return (
         <main>
             <form
-            onSubmit={''}
+            onSubmit={handleSubmit}
             >
                 <div className="searchBar">
                     <input
@@ -25,6 +20,7 @@ const SearchBox = () => {
                     />
                 </div>
                 <button
+                onClick={submitButton}
                 >Submit                
                 </button>
             </form>
