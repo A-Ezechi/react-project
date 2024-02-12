@@ -1,4 +1,4 @@
-const InnerWording = ({colourChoice}) => {
+const InnerWording = ({colourChoice, searchItem}) => {
     console.log('Colour Choice: ', colourChoice)
     const defaultBackground = { backgroundColor: 'none' }
 
@@ -8,7 +8,7 @@ const InnerWording = ({colourChoice}) => {
             className="userFeedback"
             style={colourChoice || defaultBackground }
 
-            >Empty Value</p>
+            >{searchItem ? searchItem : 'Empty Value'}</p>
         </main>
     )
 }
